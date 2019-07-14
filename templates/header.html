@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8">
+        <title>MyConsole</title>
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="SportsCup - Bootstrap 4 Theme for Soccer And Sports">
+        <meta name="author" content="iwthemes.com">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Theme CSS -->
+        <link href="../../../../static/assets/css/main.css" rel="stylesheet" media="screen">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="../../../../static/img/icons/favicon.ico">
+        <link rel="apple-touch-icon" href="../../../../static/img/icons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../../../static/img/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../../../static/img/icons/apple-touch-icon-114x114.png">
+    </head>
+
+    <body>
+
+        <!-- layout-->
+        <div id="layout">
+            <!-- Header-->
+            <header class="header-2">
+                <!-- End headerbox-->
+                <div class="headerbox">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <!-- Logo-->
+                            <div class="col col-xl-2">
+                                <a class="text-center">
+                                    <h2><span class="text-resalt"><a href="{{url_for('login')}}" >My Console</a></span></h2>
+                                </div>
+                            </div>
+                            <!-- End Logo-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End headerbox-->
+            </header>
+            <!-- End Header-->
+        </div>
+        <!-- End layout-->
+
+        <div>
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+
+        <!-- ======================= JQuery libs =========================== -->
+        <!-- jQuery local-->
+        <script type="text/javascript" src="../../../../static/assets/js/jquery.js"></script>
+        <!-- popper.js-->
+        <script type="text/javascript" src="../../../../static/assets/js/popper.min.js"></script>
+        <!-- bootstrap.min.js-->
+        <script type="text/javascript" src="../../../../static/assets/js/bootstrap.min.js"></script>
+        <!-- required-scripts.js-->
+        <script type="text/javascript" src="../../../../static/assets/js/theme-scripts.js"></script>
+        <!-- theme-main.js-->
+        <script type="text/javascript" src="../../../../static/assets/js/theme-main.js"></script>
+        <!-- ======================= End JQuery libs =========================== -->
+
+    </body>
+</html>

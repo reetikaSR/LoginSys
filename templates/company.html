@@ -1,0 +1,32 @@
+{% include "header.html" %}
+{% block content %}
+    <div class="section-newsletter no-margin" xmlns="http://www.w3.org/1999/html">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2><span class="text-resalt">Organisation</span></h2>
+                    </div>
+                    </br>
+                    <div class="row align-left">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h4><span class="text">Organisation : {{org['name']}}</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+                    <img src="{{ org_image }}" alt="Org Image">
+                    <div class="row align-left">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h4><span class="text"> Address : {{org['address']}}</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

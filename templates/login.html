@@ -1,0 +1,59 @@
+{% include "header.html" %}
+{% block content %}
+
+    <div class="section-newsletter no-margin" xmlns="http://www.w3.org/1999/html">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <h2><span class="text-resalt">Login</span></h2>
+                    </div>
+                    {% if value %}
+                        <div class="text-center">
+                            <h2><span class="alert alert-danger">{{value}}</span></h2>
+                        </div>
+                    {% endif %}
+                    <form action="" method="POST">
+                        <div class="row align-center">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                    <input class="form-control" placeholder="Your Name" name="username"  type="text" required="required">
+                                 </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row align-center">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                    <input class="form-control" placeholder="Password" name="password"  type="password" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row justify-content-center">
+                            <div class="text-center">
+                                <div class="input-group">
+                                    <button class="btn btn-primary align-center" type="submit">Proceed</button>
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row justify-content-end">
+                            <div class="col-md-6">
+                                <div class="text-right">
+                                    <p>Not a Member? <a href="{{url_for('signup')}}">SignUp</a> Now!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
